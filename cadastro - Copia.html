@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Formulário de participação do projeto sobre o filme Homem-Aranha: Um Novo Dia."
+    >
+
+    <meta
+        name="author"
+        content="Will Lucas"
+    >
+
+    <title>Homem-Aranha: Um Novo Dia | Cadastro</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🕷️ Homem-Aranha: Um Novo Dia</h1>
+
+        <p>Participe do projeto</p>
+
+        <nav>
+
+            <a href="index.html">Início</a> |
+            <a href="historia.html">História</a> |
+            <a href="personagens.html">Personagens</a> |
+            <a href="peter-parker.html">Peter Parker</a> |
+            <a href="mudancas.html">Mudanças</a> |
+            <a href="conflitos.html">Conflitos</a> |
+            <a href="licoes.html">Lições</a> |
+            <a href="curiosidades.html">Curiosidades</a> |
+            <a href="filme.html">O Filme</a> |
+            <a href="cadastro.html">Cadastro</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <h2>📝 Cadastro</h2>
+
+            <p>
+                Preencha o formulário abaixo para participar
+                da experiência interativa deste projeto.
+            </p>
+
+            <p>
+                Os campos marcados como obrigatórios precisam
+                ser preenchidos antes do envio.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>👤 Seus dados</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>Informações pessoais</legend>
+
+
+                    <p>
+
+                        <label for="nome">
+                            Nome completo:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome completo"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="email">
+                            E-mail:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="exemplo@email.com"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="nascimento">
+                            Data de nascimento:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="date"
+                            id="nascimento"
+                            name="nascimento"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="cidade">
+                            Cidade:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="text"
+                            id="cidade"
+                            name="cidade"
+                            placeholder="Digite sua cidade"
+                            list="cidades"
+                            required
+                        >
+
+                        <datalist id="cidades">
+
+                            <option value="João Pessoa">
+
+                            <option value="Recife">
+
+                            <option value="Natal">
+
+                            <option value="Fortaleza">
+
+                            <option value="Campina Grande">
+
+                        </datalist>
+
+                    </p>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <fieldset>
+
+                    <legend>Sobre sua experiência com o filme</legend>
+
+
+                    <p>
+
+                        <label for="personagem">
+                            Personagem que mais chamou sua atenção:
+                        </label>
+
+                        <br>
+
+                        <select
+                            id="personagem"
+                            name="personagem"
+                            required
+                        >
+
+                            <option value="">
+                                Selecione uma opção
+                            </option>
+
+                            <option value="peter">
+                                Peter Parker
+                            </option>
+
+                            <option value="tia-may">
+                                Tia May
+                            </option>
+
+                            <option value="outro">
+                                Outro personagem
+                            </option>
+
+                        </select>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Como você conheceu o projeto?
+                        </strong>
+
+                        <br>
+
+                        <input
+                            type="radio"
+                            id="internet"
+                            name="origem"
+                            value="internet"
+                            required
+                        >
+
+                        <label for="internet">
+                            Internet
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="radio"
+                            id="faculdade"
+                            name="origem"
+                            value="faculdade"
+                        >
+
+                        <label for="faculdade">
+                            Faculdade
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="radio"
+                            id="amigos"
+                            name="origem"
+                            value="amigos"
+                        >
+
+                        <label for="amigos">
+                            Amigos
+                        </label>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="nota">
+                            De 0 a 10, qual nota você daria
+                            para a experiência apresentada?
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="range"
+                            id="nota"
+                            name="nota"
+                            min="0"
+                            max="10"
+                            value="5"
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="cor">
+                            Escolha uma cor para representar
+                            o Homem-Aranha:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="color"
+                            id="cor"
+                            name="cor"
+                            value="#ff0000"
+                        >
+
+                    </p>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <fieldset>
+
+                    <legend>Seu comentário</legend>
+
+
+                    <p>
+
+                        <label for="comentario">
+                            O que você achou do projeto?
+                        </label>
+
+                        <br>
+
+                        <textarea
+                            id="comentario"
+                            name="comentario"
+                            rows="6"
+                            cols="50"
+                            placeholder="Digite sua opinião sobre o projeto..."
+                            required
+                        ></textarea>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="arquivo">
+                            Envie uma imagem relacionada ao tema:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="file"
+                            id="arquivo"
+                            name="arquivo"
+                            accept="image/*"
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <input
+                            type="checkbox"
+                            id="aceite"
+                            name="aceite"
+                            required
+                        >
+
+                        <label for="aceite">
+                            Confirmo que as informações preenchidas
+                            são de minha responsabilidade.
+                        </label>
+
+                    </p>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <button type="submit">
+                    Enviar cadastro
+                </button>
+
+                <button type="reset">
+                    Limpar formulário
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section>
+
+            <h2>🔎 Como funciona?</h2>
+
+            <details>
+
+                <summary>
+                    O que acontece ao enviar o formulário?
+                </summary>
+
+                <p>
+                    Como este projeto foi desenvolvido somente
+                    com HTML, o formulário possui finalidade
+                    demonstrativa e acadêmica. Ele não envia
+                    os dados para um banco de dados.
+                </p>
+
+            </details>
+
+
+            <br>
+
+
+            <details>
+
+                <summary>
+                    Por que existem campos obrigatórios?
+                </summary>
+
+                <p>
+                    O atributo
+                    <code>required</code>
+                    informa ao navegador que determinados campos
+                    precisam ser preenchidos antes do envio.
+                </p>
+
+            </details>
+
+
+            <br>
+
+
+            <details>
+
+                <summary>
+                    Para que serve o datalist?
+                </summary>
+
+                <p>
+                    O elemento
+                    <code>&lt;datalist&gt;</code>
+                    fornece sugestões enquanto o usuário
+                    preenche um campo de texto.
+                </p>
+
+            </details>
+
+        </section>
+
+
+        <aside>
+
+            <h2>🕷️ Uma nova experiência</h2>
+
+            <p>
+                Assim como Peter Parker enfrenta novas fases
+                em sua jornada, este formulário representa
+                uma nova forma de interação dentro do projeto.
+            </p>
+
+            <p>
+                <mark>
+                    Um novo dia também pode ser uma nova experiência.
+                </mark>
+            </p>
+
+        </aside>
+
+    </main>
+
+
+    <footer>
+
+        <hr>
+
+        <p>
+            Projeto acadêmico de HTML Avançado.
+        </p>
+
+        <p>
+            Desenvolvido por Will Lucas.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
